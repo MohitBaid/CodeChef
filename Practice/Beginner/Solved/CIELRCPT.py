@@ -1,0 +1,26 @@
+for _ in range(int(input())):
+	p=int(input())
+	ans=p//2048	
+	p=p%2048
+	ans+=p//1024	
+	p=p%1024
+	ans+=p//512	
+	p=p%512
+	ans+=p//256	
+	p=p%256
+	ans+=p//128	
+	p=p%128
+	ans+=p//64	
+	p=p%64
+	ans+=p//32	
+	p=p%32
+	ans+=p//16	
+	p=p%16
+	ans+=p//8	
+	p=p%8
+	ans+=p//4	
+	p=p%4
+	ans+=p//2	
+	p=p%2
+	ans+=p
+	print(ans)
